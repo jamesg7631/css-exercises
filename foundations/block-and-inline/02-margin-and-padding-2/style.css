@@ -3,24 +3,28 @@ body {
   font-family: sans-serif;
 }
 
-.card {
+.card { 
+  /* Missed padding 8px */
   width: 400px;
   background: #fff;
   margin: 16px auto;
 }
 
 .title {
+  /* Missed margin-bottom */
   background: #e3f4ff;
   padding: 8px;
   font-size: 16px;
 }
 
 .content {
+
   background: #e3f4ff;
-  padding-left: 8px;
+  /* padding-left: 8px;
   padding-right: 8px;
   padding-top: 16px;
-  padding-bottom: 16px;
+  padding-bottom: 16px; */
+  padding: 16px 8px;
 }
 
 .button-container {
