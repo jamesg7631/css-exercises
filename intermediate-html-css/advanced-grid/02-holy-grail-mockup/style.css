@@ -133,6 +133,8 @@ ul {
 }
 
 .footer {
+  display: grid;
+  place-items: center;
   background-color: #393f4d;
   grid-column: 1 / -1;
 }
