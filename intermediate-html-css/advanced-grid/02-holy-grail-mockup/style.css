@@ -7,7 +7,7 @@
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 2fr 1fr 8fr 1fr;
+  grid-template-rows: 1fr 0.5fr 8fr 0.5fr;
   /* Dont know why it was going crazy without the max height */
   height: 100vh;
   gap: 4px;
@@ -42,7 +42,6 @@ ul {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
 
-  /* TODO: Work out how to cetner the header links in grid. Tried place-items justify-content and align items already */
   justify-content: flex-end;
   align-items: flex-end;
 }
