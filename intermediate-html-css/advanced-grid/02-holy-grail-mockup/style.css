@@ -26,6 +26,8 @@
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  align-items: center;
+  text-align: left;
 }
 
 /* James added */
@@ -36,6 +38,7 @@ ul {
 /* James added */
 .menu ul {
   display: grid;
+  text-align: right;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
 
