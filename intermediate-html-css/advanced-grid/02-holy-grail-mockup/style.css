@@ -88,6 +88,9 @@ ul {
 .article {
   background-color: #bccbde;
   grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
 }
 
 .article p {
@@ -123,4 +126,3 @@ ul {
   font-size: 13px;
   font-weight: normal;
 }
-
