@@ -7,9 +7,10 @@
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-rows: 2fr 1fr 8fr 1fr;
   /* Dont know why it was going crazy without the max height */
   max-height: 100vh;
+  gap: 4px;
 }
 
 .container div {
@@ -23,6 +24,24 @@
 .header {
   background-color: #393f4d;
   grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+/* James added */
+ul {
+  list-style: none;
+}
+
+/* James added */
+.menu ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+
+  /* TODO: Work out how to cetner the header links in grid. Tried place-items justify-content and align items already */
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .menu ul,
@@ -32,7 +51,7 @@
 
 .sidebar {
   background-color: #c50208;
-  grid-row: 2 / 3;
+  grid-row: 2 / 4;
 }
 
 .sidebar .photo {
@@ -52,6 +71,13 @@
 
 .nav {
   background-color: #c50208;
+  grid-row: 2 / 3;
+}
+
+/* James Added */
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .nav ul li {
